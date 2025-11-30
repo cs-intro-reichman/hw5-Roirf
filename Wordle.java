@@ -19,6 +19,7 @@ public class Wordle {
     // return false.
     public static boolean containsChar(String secret, char c) {
         secret = secret.toLowerCase();
+        c = Character.toLowerCase(c);
         for (int i = 0; i < secret.length(); i++) {
             if (secret.charAt(i) == c) {
                 return true;}
